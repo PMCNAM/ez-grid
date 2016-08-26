@@ -1,5 +1,11 @@
-// Imports //////////////////////////////////////
-@import 'variables.scss';
+// Breakpoints //////////////////////////////////
+$breakpoint-lg: 1000px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 480px;
+
+// Grid Settings ////////////////////////////////
+$grid-columns: 12;
+$max-content-width: 1200px;
 
 // Mixins ///////////////////////////////////////
 @mixin borderbox(){
@@ -74,14 +80,14 @@ img {
 
 @include gridify('sm');
 
-@media screen and #{$small} {
+@media screen and (min-width: #{$breakpoint-sm}) {
 	@include gridify('md');
 }
 
-@media screen and #{$medium} {
+@media screen and (min-width: #{$breakpoint-md}) {
     @include gridify('lg');
 }
 
-@media screen and #{$large} {
+@media screen and (min-width: #{$breakpoint-lg}) {
     @include gridify('xl');
 }

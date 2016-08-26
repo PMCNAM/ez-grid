@@ -1,9 +1,10 @@
 {
-  "name": "EZ Grid",
-  "version": "0.0.1",
-  "devDependencies": {
-    "grunt": "0.4.1",
-    "grunt-contrib-compass": "^1.0.4",
-    "grunt-contrib-watch": "~0.4.4"
-  }
+	"name": "Grid",
+	"version": "0.0.1",
+	"devDependencies": {
+		"grunt": "^0.4.1",
+	    "grunt-contrib-watch": "^0.4.4",
+	    "grunt-contrib-sass": "^1.0.0",
+	    "grunt-contrib-cssmin": "^1.0.0"
+	}
 }
