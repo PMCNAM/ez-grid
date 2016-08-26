@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EZ Grid</title>
+	<link rel="stylesheet" href="css/ezgrid.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="row">
+			<div class="col-md-12">
+				<h1>EZ Grid</h1>
+				By <a href="http://pat-mc.com">Pat McNamara</a><br><br>
+				<div class="xl-message right"><h2>Extra Large (>1000px)</h2></div>
+				<div class="lg-message right"><h2>Large (768 - 999px)</h2></div>
+				<div class="md-message right"><h2>Medium (480 - 767px)</h2></div>
+				<div class="sm-message right"><h2>Small (<480px)</h2></div>
+			</div>
+		</header>
+		<div class="row">
+			<div class="col-md-6 col-xl-4">.col-md-6.col-xl-4</div>
+			<div class="col-md-6 col-xl-4">.col-md-6.col-xl-4</div>
+			<div class="col-sm-4 col-xl-4">.col-sm-4.col-xl-4</div>
+			<div class="col-sm-4 col-xl-6">.col-sm-4.col-xl-6</div>
+			<div class="col-sm-4 col-xl-6">.col-sm-4.col-xl-6</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 col-lg-3">.col-md-12.col-lg-3</div>
+			<div class="col-md-4 col-lg-3">.col-md-4.col-lg-3</div>
+			<div class="col-md-4 col-lg-3">.col-md-4.col-lg-3</div>
+			<div class="col-md-4 col-lg-3">.col-md-4.col-lg-3</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2">.col-md-2</div>
+			<div class="col-md-2">.col-md-2</div>
+			<div class="col-md-2">.col-md-2</div>
+			<div class="col-md-2">.col-md-2</div>
+			<div class="col-md-2">.col-md-2</div>
+			<div class="col-md-2">.col-md-2</div>
+		</div>
+		<div class="row">
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+			<div class="col-md-1">.col-md-1</div>
+		</div>
+		<div class="row">
+			<div class="col-md-7">.col-md-7</div>
+			<div class="col-md-5">.col-md-5</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">.col-md-3</div>
+			<div class="col-md-9">
+				<div class="row">
+					<div class="col-sm-6">
+						.col-md-9 > .row > .col-sm-6 (nested row)
+					</div>
+					<div class="col-sm-6">
+						.col-md-9 > .row > .col-sm-6 (nested row)
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="row">
+			<div class="col-md-12">
+				<p>col-md-12</p>
+			</div>
+		</footer>
+	</div>
+	<style>
+		[class*='col-'] {
+		    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5) inset;
+		}
+		@media all and (max-width: 479px){
+			.lg-message, .md-message, .xl-message{
+				display: none;
+			}
+		}
+		@media all and (min-width: 480px) and (max-width: 767px){
+			.sm-message, .lg-message, .xl-message{
+				display: none;
+			}
+		}
+		@media all and (min-width: 768px) and (max-width: 999px){
+			.sm-message, .md-message, .xl-message{
+				display: none;
+			}
+		}
+		@media all and (min-width: 1000px){
+			.sm-message, .md-message, .lg-message{
+				display: none;
+			}
+		}
+	</style>
+</body>
+</html>
